@@ -13,7 +13,7 @@
 }
 *{
   font-family: 'Manrope', sans-serif;
-
+  background: #040C18;
 }
 
 //section1 styling begin
@@ -23,7 +23,6 @@
 .section1{
   padding-top: 0.5%;
   padding-bottom: 5%;
-background-image:linear-gradient(135deg,#002853 20%,#040C18 90%,#072D56 100% );
 
   .sub-section{
     margin-top: 60px;
@@ -53,11 +52,13 @@ font-size: 58px;
 font-weight: 800;
 line-height: 65px;
 letter-spacing: -2.48px;
+animation: HeroText 1.5s ease-out 1s;
   }
   p{
     color: $smallerTextcolor;
 font-size: 20px;
 font-weight: 400;
+animation: PText 1s ease-out 1.5s;
   }
   .form{
   display: flex;
@@ -97,7 +98,7 @@ font-weight: 400;
     .AIImg{
       width: 558px;
       height: 600px;
-      animation: aiImg 2.5s ease-in-out;
+      animation: aiImg 2.5s ease-out;
     }
   }
   .reviews{
@@ -115,14 +116,87 @@ font-weight: 400;
   0%{
    transform: scale(0.5); filter: blur(3px);
   }
-  75%{
-    transform: scale(1.05);
-  }
   100%{
     transform: scale(1);
   }
   
 }
+@keyframes HeroText{
+from{
+transform: translateY(-10%); opacity: 0.1;
+}
+to{
+  transform: translateX(0); opacity: 1;
+}
+}
+@keyframes PText{
+  from{
+  transform: translateY(10%); opacity: 0.01;
+  }
+  to{
+    transform: translateX(0); opacity: 1;
+  }
+  }
+  //section1 styling ends   
+  // company logo starts
+  .logosection{
+    margin-top: -1%;
+    background: linear-gradient(to right,#040C18 85%,#072D56 blur(1px));
+    padding-bottom: 70px;
+  .logosect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100px;
+    img{
+      width: 100px;
+      margin-right: 2%;
+    }
+  }
+}
+// section2 styling starts
+.section2{
+  .firstside{
+   p{
+color: #FFF;
+font-size: 20px;
+font-weight: 800;
+line-height: 45px; 
+   }
+  }
+   .firstsideText{
+    p{
+      color: $smallerTextcolor;
+font-size: 16px;
+font-weight: 500;
+line-height: 30px;
+    }
+  }
+  .secondside1{
+    h3{
+       @include background;
+font-size: 30px;
+font-weight: 800;
+line-height: 45px;
+    }
+  }
+  .secondside2{
+    h5{
+      color: $smallTextColor;
+font-size: 16px;
+font-weight: 500;
+line-height: 40px;
+    }
+  }
+  .thirdside p{
+    color: #fff;
+  }
+  .thirdside .text3{
+    color: $smallerTextcolor;
+font-size: 16px;
+font-weight: 500;
+line-height: 30px;
+  }
+  }
 
-
-//section1 styling ends   
