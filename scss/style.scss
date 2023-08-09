@@ -1,4 +1,4 @@
-
+@import 'media';
   @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&display=swap');
   
   $smallTextColor:  #FF8A71;
@@ -13,7 +13,7 @@
 }
 *{
   font-family: 'Manrope', sans-serif;
-  background: #040C18;
+  
 }
 
 //section1 styling begin
@@ -23,9 +23,10 @@
 .section1{
   padding-top: 0.5%;
   padding-bottom: 5%;
-
+  background: #040C18;
   .sub-section{
     margin-top: 60px;
+    
   }
 
 nav{
@@ -44,6 +45,7 @@ nav{
 .signIn, .nav-link{
 font-size: 14px;
 }
+
 }
 
   h1{
@@ -51,14 +53,15 @@ font-size: 14px;
 font-size: 58px;
 font-weight: 800;
 line-height: 65px;
-letter-spacing: -2.48px;
-animation: HeroText 1.5s ease-out 1s;
+visibility: hidden;
+animation: HeroText 1s ease-out .2s forwards;
   }
   p{
     color: $smallerTextcolor;
 font-size: 20px;
 font-weight: 400;
-animation: PText 1s ease-out 1.5s;
+visibility: hidden;
+animation: PText 1s ease-out .2s forwards;
   }
   .form{
   display: flex;
@@ -70,10 +73,11 @@ animation: PText 1s ease-out 1.5s;
       outline: none;
       border: none;
       caret-color: white;
+      color: #fff;
     }
     ::placeholder{
       color: #3D6184;
-font-size: 16px;
+font-size: 14px;
 font-weight: 400;
     }
     button{
@@ -82,7 +86,7 @@ font-weight: 400;
       background: $btnBgColor;
       border: none;
       border-radius: 0 5px 5px 0;
-      font-weight: 700;
+      font-weight: 600;
       transition: all .2s linear;
       &:hover{
         background: #fe6442;
@@ -98,7 +102,7 @@ font-weight: 400;
     .AIImg{
       width: 558px;
       height: 600px;
-      animation: aiImg 2.5s ease-out;
+      animation: aiImg 1.5s ease-out;
     }
   }
   .reviews{
@@ -106,9 +110,11 @@ font-weight: 400;
     p{
      font-size:small;
      line-height: 40px;
+     
     }
     .people{
       margin-left: -17px;
+    
     }
   }
 }
@@ -123,25 +129,27 @@ font-weight: 400;
 }
 @keyframes HeroText{
 from{
-transform: translateY(-10%); opacity: 0.1;
+visibility: hidden;transform: translateY(-10%); opacity: 0.1;
 }
 to{
-  transform: translateX(0); opacity: 1;
+  visibility:visible;transform:translateX(0); opacity: 1;
 }
 }
 @keyframes PText{
   from{
-  transform: translateY(10%); opacity: 0.01;
+    visibility: hidden;transform: translateY(10%); opacity: 0.01;
   }
   to{
-    transform: translateX(0); opacity: 1;
+    
+      visibility:visible;transform: translateX(0); opacity: 1;
   }
   }
   //section1 styling ends   
+
   // company logo starts
   .logosection{
     margin-top: -1%;
-    background: linear-gradient(to right,#040C18 85%,#072D56 blur(1px));
+    background: #040C18;
     padding-bottom: 70px;
   .logosect{
     display: flex;
@@ -149,14 +157,23 @@ to{
     align-items: center;
     flex-wrap: wrap;
     height: 100px;
+    
     img{
       width: 100px;
-      margin-right: 2%;
+      margin: 0 5% 3% 5%; 
+      
     }
   }
 }
 // section2 styling starts
 .section2{
+  margin-top: -1%;
+  background: #040C18;
+
+  .sectiontwo{
+    padding: 50px;
+  background: linear-gradient(to bottom right,  #042d58 20%,#0F4279 90%,#1B78DE);
+  }
   .firstside{
    p{
 color: #FFF;
@@ -168,7 +185,7 @@ line-height: 45px;
    .firstsideText{
     p{
       color: $smallerTextcolor;
-font-size: 16px;
+font-size: 14px;
 font-weight: 500;
 line-height: 30px;
     }
@@ -184,9 +201,8 @@ line-height: 45px;
   .secondside2{
     h5{
       color: $smallTextColor;
-font-size: 16px;
+font-size: 12px;
 font-weight: 500;
-line-height: 40px;
     }
   }
   .thirdside p{
@@ -196,7 +212,113 @@ line-height: 40px;
     color: $smallerTextcolor;
 font-size: 16px;
 font-weight: 500;
-line-height: 30px;
+line-height: 30px; 
   }
+  .row1,.row2{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  }
+
+
+  @media only screen and (max-width: 578px){
+ .section1 .reviews{
+  flex-direction: column;
+  .pple{
+    font-size: x-small;
+    letter-spacing: 0;
+  }
+  .reviewText{
+    margin-top: 8px;
+  }
+ }
+  }
+// for small to medium devices
+  @media only screen and (max-width: 992px) {
+    .hero-section{
+      flex-direction: column-reverse;
+    }
+    .section1 .sub-section {
+      text-align: center;
+    }
+    .section1 nav .nav-link {
+      margin-left: 0 !important;
+    }
+    .section1 h1 {
+      font-size: 40px;
+      line-height: 55px;
+      margin-bottom: 8% !important;
+    }
+    .section1 h1 br {
+      display: none;
+    }
+    .section1 p {
+      font-size: 16px;
+      margin-bottom: 8% !important;
+    }
+    .section1 .form {
+      flex-direction: column;
+    }
+    .section1 .form input[type=email] {
+      width: 100%;
+      border-radius: 5px 5px 0 0;
+      padding: 18px;
+    }
+    .section1 .form ::placeholder {
+      text-align: center;
+    }
+    .section1 .form button {
+      width: 100%;
+      padding: 18px 0 18px 0;
+      border-radius: 0 0 5px 5px;
+    }
+    .section1 .imgAi {
+      width: 100%;
+      margin-top: 15px;
+    }
+    .section1 .imgAi .AIImg {
+      width: 100%;
+      height:auto;
+    }
+    .section1 .reviews p {
+      line-height: 0;
+      margin-top: 15px;
+
+    }
+    .logosection .logosect {
+      padding: 70px 0;
+    }
+    
+    .section2 .sectiontwo{
+      padding: 10px;
+    }
+    .section2  .firstside p{
+      line-height: 30px;
+    }
+    .section2  .firstsideText p{
+      line-height: 25px;
+    }
+    .section2 .row1, .section2 .row2,   .section2 .row3{
+      padding: 20px 0;
+    }
+    .section2 .secondside1  h3{
+  font-size: 32px;
+  line-height: 42px;
+  br{
+    display: none;
+  }
+    }
+    .section2 .secondside2 h5{
+      margin-top: 10px;
+      font-size: 16px;
+    }
+    .section2 .thirdside .text3{
+      font-size: 14px;
+      line-height: 20px;
+      margin-top: 10px !important;
+    }
+    .section2 .thirdside p{
+      line-height: 20px;
+    }
   }
 
