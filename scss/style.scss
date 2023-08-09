@@ -13,9 +13,10 @@
 }
 *{
   font-family: 'Manrope', sans-serif;
-  
 }
-
+body{
+  background: #040C18;
+}
 //section1 styling begin
 .row {
   margin: 0 !important;
@@ -247,14 +248,14 @@ line-height: 30px;
     .section1 h1 {
       font-size: 40px;
       line-height: 55px;
-      margin-bottom: 8% !important;
+      margin-bottom: 18% !important;
     }
     .section1 h1 br {
       display: none;
     }
     .section1 p {
       font-size: 16px;
-      margin-bottom: 8% !important;
+      margin-bottom: 18% !important;
     }
     .section1 .form {
       flex-direction: column;
@@ -275,6 +276,7 @@ line-height: 30px;
     .section1 .imgAi {
       width: 100%;
       margin-top: 15px;
+      margin-bottom: 15px;
     }
     .section1 .imgAi .AIImg {
       width: 100%;
@@ -285,8 +287,9 @@ line-height: 30px;
       margin-top: 15px;
 
     }
+    
     .logosection .logosect {
-      padding: 70px 0;
+      padding: 50px 0;
     }
     
     .section2 .sectiontwo{
