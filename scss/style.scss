@@ -168,7 +168,7 @@ to{
 }
 // section2 styling starts
 .section2{
-  margin-top: -1%;
+  margin-top: -3%;
   background: #040C18;
 
   .sectiontwo{
@@ -222,14 +222,14 @@ line-height: 30px;
   }
   .section3{
     background: #040C18;
-    margin-top: -1%;
+    margin-top: -3%;
     .s-3{
       padding: 80px 0;
     }
     .section3-1{
    h2{
     @include background;
-    width: 425px;
+  
     font-weight: 800;
     line-height: 45px;
     font-size: 34px;
@@ -263,7 +263,7 @@ line-height: 30px;
   }
   .section4{
     background: #040C18;
-  
+  margin-top: -3%;
     .blueText{
       color: $textRequest;
       font-size: small;
@@ -299,6 +299,7 @@ line-height: 25px;
   }
   .section5{
     background: #040C18;
+    margin-top: -3%;
     .boxgradient{
       height: 150px;
    background: linear-gradient(90deg, #AE67FA , #F49867);
@@ -332,11 +333,13 @@ line-height: 35px;
 .section6{
   background: #040C18;
   padding: 70px 0;
+  margin-top: -3%;
   h2{
     @include background;
 font-size: 52px;
 font-weight: 800;
 line-height: 75px;
+width: 60%;
   }
   .sect6{
     margin-top: 50px;
@@ -350,6 +353,7 @@ line-height: 75px;
   display: flex;
     flex-direction: column;
     align-content: space-between;
+    width: 100%;
 }
 .p12{
   height: 140px;
@@ -395,6 +399,7 @@ line-height: 75px;
   background:#031B34;
   text-align: center;
   padding: 100px 0;
+  margin-top: -3%;
   .sect7{
    margin:0 auto;
    padding: 70px 0;
@@ -417,6 +422,7 @@ line-height: 75px;
 }
 .footer{
   background: #031B34;
+  margin-top: -3%;
   p{
     font-size: small;
   }
@@ -442,8 +448,19 @@ line-height: 75px;
   .reviewText{
     margin-top: 8px;
   }
- }
   }
+  .section4img{
+    width: 100%;
+  }
+  .section3-1{
+    h2{
+     width: 100%;
+     font-size: 12px;
+    }
+ 
+  }
+}
+  
 // for small to medium devices
   @media only screen and (max-width: 992px) {
     .hero-section{
@@ -533,6 +550,9 @@ line-height: 75px;
     }
     .section2 .thirdside p{
       line-height: 20px;
+    }
+    .section4img{
+      width: 100%;
     }
   }
 

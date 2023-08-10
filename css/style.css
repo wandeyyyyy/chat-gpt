@@ -153,7 +153,7 @@ html, body {
 }
 
 .section2 {
-  margin-top: -1%;
+  margin-top: -3%;
   background: #040C18;
 }
 .section2 .sectiontwo {
@@ -201,7 +201,7 @@ html, body {
 
 .section3 {
   background: #040C18;
-  margin-top: -1%;
+  margin-top: -3%;
 }
 .section3 .s-3 {
   padding: 80px 0;
@@ -210,7 +210,6 @@ html, body {
   background: linear-gradient(90deg, #AE67FA, #F49867);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  width: 425px;
   font-weight: 800;
   line-height: 45px;
   font-size: 34px;
@@ -238,6 +237,7 @@ html, body {
 
 .section4 {
   background: #040C18;
+  margin-top: -3%;
 }
 .section4 .blueText {
   color: #71E5FF;
@@ -275,6 +275,7 @@ html, body {
 
 .section5 {
   background: #040C18;
+  margin-top: -3%;
 }
 .section5 .boxgradient {
   height: 150px;
@@ -309,6 +310,7 @@ html, body {
 .section6 {
   background: #040C18;
   padding: 70px 0;
+  margin-top: -3%;
 }
 .section6 h2 {
   background: linear-gradient(90deg, #AE67FA, #F49867);
@@ -317,6 +319,7 @@ html, body {
   font-size: 52px;
   font-weight: 800;
   line-height: 75px;
+  width: 60%;
 }
 .section6 .sect6 {
   margin-top: 50px;
@@ -330,6 +333,7 @@ html, body {
   display: flex;
   flex-direction: column;
   align-content: space-between;
+  width: 100%;
 }
 .section6 .p12 {
   height: 140px;
@@ -374,6 +378,7 @@ html, body {
   background: #031B34;
   text-align: center;
   padding: 100px 0;
+  margin-top: -3%;
 }
 .section7 .sect7 {
   margin: 0 auto;
@@ -399,6 +404,7 @@ html, body {
 
 .footer {
   background: #031B34;
+  margin-top: -3%;
 }
 .footer p {
   font-size: small;
@@ -424,6 +430,13 @@ html, body {
   }
   .section1 .reviews .reviewText {
     margin-top: 8px;
+  }
+  .section4img {
+    width: 100%;
+  }
+  .section3-1 h2 {
+    width: 100%;
+    font-size: 12px;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -510,6 +523,9 @@ html, body {
   }
   .section2 .thirdside p {
     line-height: 20px;
+  }
+  .section4img {
+    width: 100%;
   }
 }
 
