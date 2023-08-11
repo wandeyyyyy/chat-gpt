@@ -438,17 +438,7 @@ html, body {
     width: 100%;
     font-size: 12px;
   }
-  .secondside1 h3 {
-    text-align: center;
-  }
-  .secondside2 h5 {
-    text-align: center;
-  }
-  .section3 .section3-1 h2 {
-    text-align: center;
-  }
   .section3 .section3-1 h5 {
-    text-align: center;
     margin-bottom: 35px;
   }
   .section4 .sectfour h3 {
@@ -461,6 +451,7 @@ html, body {
   .section5 .boxgradient {
     flex-direction: column;
     justify-content: space-around;
+    padding: 5px 0;
   }
   .section5 .boxgradient p {
     line-height: 18px;
@@ -576,6 +567,80 @@ html, body {
   }
   .section4img {
     width: 100%;
+  }
+  .section4 .sect4-text {
+    padding-top: 50px;
+  }
+  .section6 h2 {
+    width: 100%;
+    line-height: 65px;
+    text-align: center;
+    font-size: 55px;
+    padding-bottom: 20px;
+  }
+  .footer .touch {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+  .section1 .sub-section {
+    padding: 2% 0;
+  }
+  .section1 .nav-link {
+    padding: 0;
+    margin-left: 10px !important;
+  }
+  .section1 h1 {
+    font-size: 42px;
+    line-height: 50px;
+  }
+  .section1 h1 br {
+    display: none;
+  }
+  .section1 .reviews .people {
+    display: none;
+  }
+  .section1 .reviews p {
+    line-height: 30px;
+  }
+  .section1 .imgAi .AIImg {
+    width: 458px;
+  }
+  .section3 {
+    padding: 2% 0;
+  }
+  .section4 {
+    padding: 2% 0;
+  }
+  .section4 .sect4-text {
+    margin-left: 35px;
+  }
+  .section4 .sectfour h3 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .sixCont1 {
+    padding: 3% 0;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .section1 .imgAi {
+    float: right;
+  }
+  .section1 .sub-section {
+    padding: 3% 0;
+  }
+  .section3 {
+    padding-top: 4%;
+  }
+  .section4 {
+    padding: 3.5% 0;
+  }
+  .section5 {
+    padding: 2% 0;
+  }
+  .section6 {
+    padding-bottom: 5%;
   }
 }
 

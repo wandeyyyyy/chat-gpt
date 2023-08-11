@@ -14,6 +14,7 @@
 *{
   font-family: 'Manrope', sans-serif;
 }
+
 html, body{
   background: #040C18;
 }
@@ -29,8 +30,10 @@ html, body{
     margin-top: 60px;
     
   }
+  
 
 nav{
+  
 
 .signUp{
   background: $btnBgColor;
@@ -459,23 +462,11 @@ line-height: 75px;
     }
  
   }
-  .secondside1{
-    h3{
-text-align: center;
-    }
-  }
-  .secondside2{
-    h5{
-      text-align: center;
-    }
-  }
+  
   .section3{
     .section3-1{
-      h2{
-        text-align: center;
-      }
+     
       h5{
-        text-align: center;
         margin-bottom: 35px;
       }
     }
@@ -497,6 +488,7 @@ text-align: center;
     .boxgradient{
       flex-direction: column;
       justify-content: space-around;
+      padding: 5px 0;
       p{
         line-height: 18px;
         font-size: 16px;
@@ -624,5 +616,98 @@ text-align: center;
     .section4img{
       width: 100%;
     }
+    .section4{
+      .sect4-text{
+        padding-top: 50px;
+      }
+    }
+    .section6{
+      h2{
+        width:100%;
+        line-height: 65px;
+        text-align: center;
+        font-size: 55px;
+        padding-bottom: 20px;
+      }
   }
+  .footer{
+    .touch{
+      margin-top: 30px;
+    }
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1400px){
+  .section1{
+    .sub-section{
+    padding: 2% 0;
+    }
+    .nav-link{
+      padding: 0;
+      margin-left: 10px !important;
+    }
+    h1{
+      br{
+        display: none;
+      }
+      font-size: 42px;
+      line-height: 50px;
+    }
+  
+  .reviews{
+    .people{
+     display: none;
+    }
+    p{
+      line-height: 30px;
+    }
+  }
+  .imgAi{
+    .AIImg{
+      width: 458px;
+    }
+  }
+}
+.section3{
+  padding: 2% 0;
+}
+.section4{
+  padding: 2% 0;
+  .sect4-text{
+   
+    margin-left: 35px;
+  }
+  .sectfour{
+    h3{
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+}
+.sixCont1{
+  padding: 3% 0;
+}
+}
+@media screen and (min-width: 1600px) {
+.section1{
+  .imgAi{
+    float: right;
+  }
+  .sub-section{
+    padding: 3% 0;
+  }
+}
+.section3{
+    padding-top: 4% ;
+}
+.section4{
+  padding: 3.5% 0;
+}
+.section5{
+  padding: 2% 0;
+}
+.section6{
+  padding-bottom: 5%;
+
+}
+}
 
