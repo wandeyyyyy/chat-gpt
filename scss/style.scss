@@ -40,10 +40,12 @@
   }
   
 .navbar-brand{
-  font-size: 32px;
+  font-size: 22px;
 }
 nav{
-  
+  .fa-solid .fa-hamburger{
+    font-size: 50px;
+  }
 
 .signUp{
   background: $btnBgColor;
@@ -353,7 +355,7 @@ line-height: 35px;
   margin-top: -3%;
   h3{
     @include background;
-font-size: 52px;
+font-size: 48px;
 font-weight: 800;
 line-height: 75px;
 width: 60%;
@@ -480,6 +482,11 @@ line-height: 75px;
         font-size: 16px;
       }
     }
+    .section3-2{
+      p{
+        font-size: 16px;
+      }
+    }
     
   }
   .section4{
@@ -494,6 +501,9 @@ line-height: 75px;
   .sect4-text{
     padding-top: 50px;
   }
+  p{
+    font-size: 16px !important;
+  }
   }
   .section5{
     .boxgradient{
@@ -504,6 +514,7 @@ line-height: 75px;
         line-height: 22px;
         font-size: 16px;
         text-align: center;
+        padding:  5px 10px;
       }
       h6{
         line-height: 15px;
@@ -665,9 +676,18 @@ line-height: 75px;
     .section6{
       h3{
         width:100%;
-        line-height: 65px;
-        font-size: 55px;
+        line-height: 50px;
+        font-size: 36px;
         padding-bottom: 20px;
+      }
+      .p11{
+        height: 168px;
+      }
+      .para{
+        font-size: 16px;
+      }
+      .sixCont1{
+        margin-bottom: 10%;
       }
   }
   .footer{
