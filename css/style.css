@@ -147,12 +147,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   height: 100px;
 }
 .logosection .logosect img {
   width: 100px;
   margin: 0 5% 3% 5%;
+}
+.logosection .logosect .carousel {
+  display: none;
 }
 
 .section2 {
@@ -449,21 +451,6 @@
   .section4 p {
     font-size: 16px !important;
   }
-  .section5 .boxgradient {
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 5px 0;
-  }
-  .section5 .boxgradient p {
-    line-height: 22px;
-    font-size: 16px;
-    text-align: center;
-    padding: 5px 10px;
-  }
-  .section5 .boxgradient h6 {
-    line-height: 15px;
-    text-align: center;
-  }
   .section6 h3 {
     width: 100%;
     line-height: 50px;
@@ -561,6 +548,9 @@
   .logosection .logosect {
     padding: 50px 0 70px 0;
   }
+  .logosection .logosect .carousel {
+    display: block;
+  }
   .section2 .sectiontwo {
     padding: 10px;
   }
@@ -601,6 +591,28 @@
   }
   .section4 .sectfour {
     flex-direction: column-reverse;
+  }
+  .section5 .boxgradient {
+    flex-direction: column;
+    padding: 5px 0;
+  }
+  .section5 .boxgradient p {
+    line-height: 22px;
+    font-size: 16px;
+    text-align: center;
+    padding: 5px 10px;
+    margin-top: 10px;
+  }
+  .section5 .boxgradient h6 {
+    line-height: 15px;
+    text-align: center;
+  }
+  .section5 .boxgradient .boxStarted {
+    width: 60%;
+  }
+  .section5 .boxgradient .boxStarted button {
+    width: 100%;
+    margin-bottom: 10px;
   }
   .section6 h3 {
     width: 100%;

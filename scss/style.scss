@@ -172,13 +172,16 @@ to{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+   
     height: 100px;
     
     img{
       width: 100px;
       margin: 0 5% 3% 5%; 
       
+    }
+    .carousel{
+      display: none;
     }
   }
 }
@@ -505,23 +508,7 @@ line-height: 75px;
     font-size: 16px !important;
   }
   }
-  .section5{
-    .boxgradient{
-      flex-direction: column;
-      justify-content: space-around;
-      padding: 5px 0;
-      p{
-        line-height: 22px;
-        font-size: 16px;
-        text-align: center;
-        padding:  5px 10px;
-      }
-      h6{
-        line-height: 15px;
-        text-align: center;
-      }
-    }
-  }
+  
   .section6{
     h3{
       width:100%;
@@ -628,6 +615,12 @@ line-height: 75px;
     
     .logosection .logosect {
       padding: 50px 0 70px 0;
+      .carousel{
+        display: block;
+      }
+      img{
+      
+      }
     }
     
     .section2 .sectiontwo{
@@ -671,6 +664,30 @@ line-height: 75px;
       }
       .sectfour{
         flex-direction: column-reverse;
+      }
+    }
+    .section5{
+      .boxgradient{
+        flex-direction: column;
+        padding: 5px 0;
+        p{
+          line-height: 22px;
+          font-size: 16px;
+          text-align: center;
+          padding:  5px 10px;
+          margin-top: 10px;
+        }
+        h6{
+          line-height: 15px;
+          text-align: center;
+        }
+        .boxStarted {
+          width: 60%;
+          button{
+            width: 100%;
+            margin-bottom: 10px;
+          }
+        }
       }
     }
     .section6{
