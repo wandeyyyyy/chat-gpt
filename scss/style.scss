@@ -168,6 +168,9 @@ to{
     margin-top: -1%;
     background: #040C18;
     padding-bottom: 70px;
+    .icons{
+      display: none;
+    }
   .logosect{
     display: flex;
     justify-content: center;
@@ -180,9 +183,7 @@ to{
       margin: 0 5% 3% 5%; 
       
     }
-    .carousel{
-      display: none;
-    }
+
   }
 }
 // section2 styling starts
@@ -471,7 +472,52 @@ line-height: 75px;
     }
  
   }
-  
+  .logosection .logosect{
+    display: none;
+  }
+  .logosection .icons{
+    display: flex;
+    justify-content: space-around;
+  }
+  .logosection .icons .icon{
+ 
+      position: relative;
+      display: inline-block;
+      border-bottom: 1px dotted black;
+      cursor: pointer;
+      .brand{
+        visibility: hidden;
+  width: 70px;
+  background-color:  #a8b2c2;
+  color: #040C18;
+  font-weight: 800;
+  font-size: small;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -35px;
+  opacity: 0;
+  transition: opacity .5s;
+      }
+      .brand::after{
+        content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+      }
+    &:hover .brand{
+      visibility: visible;
+      opacity: 1;
+    }
+  }
   .section3{
     .section3-1{
      
@@ -571,14 +617,14 @@ line-height: 75px;
     .section1 h1 {
       font-size: 40px;
       line-height: 55px;
-      margin-bottom: 18% !important;
+      margin-bottom: 70px !important;
     }
     .section1 h1 br {
       display: none;
     }
     .section1 p {
       font-size: 16px;
-      margin-bottom: 18% !important;
+      margin-bottom: 70px !important;
     }
     .section1 .form {
       flex-direction: column;
@@ -587,7 +633,7 @@ line-height: 75px;
       width: 100%;
       border-radius: 5px;
       padding: 18px;
-      margin-bottom: 5%;
+      margin-bottom: 15px;
     }
     .section1 .form ::placeholder {
       text-align: center;
@@ -615,12 +661,7 @@ line-height: 75px;
     
     .logosection .logosect {
       padding: 50px 0 70px 0;
-      .carousel{
-        display: block;
-      }
-      img{
       
-      }
     }
     
     .section2 .sectiontwo{
